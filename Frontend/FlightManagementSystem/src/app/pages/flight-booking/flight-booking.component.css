@@ -1,0 +1,24 @@
+.card{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-right: 20px;
+    background: hsla(205, 46%, 30%, 1);
+    background: linear-gradient(90deg,hsla(205, 46%, 30%, 1),hsla(260,29%,36%,1) 100%);
+    color: aliceblue;
+    width: 1000px;
+    height:360px;
+    border-radius: 20px;
+  }
+  
+  .a{
+    width:200px;
+    margin: 10px;
+    margin-left: 400px;
+  }
+  .b{
+    width:200px;
+    margin: 10px;
+    margin-left: 400px;
+  }
+ 

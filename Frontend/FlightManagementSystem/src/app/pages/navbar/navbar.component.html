@@ -1,0 +1,5 @@
+<header>
+    <div class="company-name">{{ companyName }}</div>
+    <button *ngIf="!loggedIn" (click)="loadDashboard()" class="login-button" >Home</button>
+    <button *ngIf="loggedIn" (click)="logoutUser()" class="login-button" >Logout</button>
+  </header>

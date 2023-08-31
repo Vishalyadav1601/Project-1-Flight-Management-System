@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: hsla(205, 46%, 30%, 1);
+    background: linear-gradient(90deg,hsla(205, 46%, 30%, 1),hsla(260,29%,36%,1) 100%);
+    color: aliceblue;
+    
+    color: white;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+  }
+  
+  .login-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

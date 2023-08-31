@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login as Admin</h1>
+                    <h5>Please Admin Name and password</h5>
+                </div>
+
+                <form (ngSubmit)="onSubmit()">
+    
+                        <mat-form-field class="full-width">
+                          <mat-label for>User Name</mat-label>
+                          <input [(ngModel)]="adminCredentials.adminName" required name="username" type="text" matInput>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                          <mat-label for="exampleInputPassword1">Password</mat-label>
+                          <input [(ngModel)]="adminCredentials.adminPassword" required name = "password" type="password" matInput />
+                        </mat-form-field>
+                       
+                        <button type="submit" class="btn btn-primary" >Login</button><br>
+                     
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

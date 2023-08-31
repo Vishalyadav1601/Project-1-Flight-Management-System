@@ -1,0 +1,41 @@
+<div class="container">
+    <form>
+        <div class="card">
+            <h1 class="mt-5">Book your tickets now!!</h1>
+      
+            <div class="a">
+                <select name="from" class="custom-select">
+                    <option selected>From</option>   
+                    <option value="volvo">Noida</option>
+                    <option value="fiat">Delhi</option>   
+                    <option value="audi">Gurgaon</option>   
+                </select>
+            </div>
+
+            <div class="b">
+                <select name="To" class="custom-select">
+                    <option selected>To</option>
+                    <option value="volvo">Mumbai</option>
+                    <option value="fiat">Bareilly</option>
+                    <option value="audi">Goa</option>
+                </select>
+
+              
+                <div class="mt-3">  
+                  <label for="arrivalTime">Date  </label> 
+                  <br> 
+                  <input type="date" id="arrivalTime" formControlName="arrivalTime"> 
+                </div>  
+    
+                <button class="btn btn-primary btn-sm mt-4" type="submit" routerLink="/bookingDet">Add Passengers</button>
+            </div>
+
+        </div>
+
+
+    </form>
+</div>
+
+
+   
+   

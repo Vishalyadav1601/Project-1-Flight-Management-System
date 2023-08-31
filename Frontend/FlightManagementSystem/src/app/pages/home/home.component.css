@@ -1,0 +1,30 @@
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background: hsla(205, 46%, 30%, 1);
+    background: linear-gradient(90deg,hsla(205, 46%, 30%, 1),hsla(260,29%,36%,1) 100%);
+    color: aliceblue;
+    width: 1000px;
+    height:300px;
+    border-radius: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .user-button,
+  .admin-button,
+  .signup-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: rgb(250, 250, 255);
+    background-color: #007bff;
+    
+  }

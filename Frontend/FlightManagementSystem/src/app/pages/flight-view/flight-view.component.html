@@ -1,0 +1,17 @@
+<div class=" container flight-list">
+   
+  <table class="table table-striped">
+    <thead>
+     <th>Available Flight</th>
+    </thead>
+   
+  </table>
+    <div *ngFor="let flight of flights" class="flight-card">
+      <h3>{{ flight.flightNumber }}</h3>
+      <p>Departure: {{ flight.departure }}</p>
+      <p>Arrival: {{ flight.arrival }}</p>
+      <p>Price: {{ flight.price }}</p>
+      <button>Select</button>
+    </div>
+  </div>
+  

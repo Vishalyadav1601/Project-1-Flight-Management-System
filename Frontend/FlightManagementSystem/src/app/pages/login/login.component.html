@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login as User</h1>
+                    <h5>Please enter User Name and Password</h5>
+                </div>
+                <div>
+                    <form (ngSubmit) = "onSubmit()">
+    
+                        <mat-form-field class="full-width">
+                          <mat-label>User Name</mat-label>
+                          <input [(ngModel)]="credentials.userName" required name = "username" type="text" matInput />
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                          <mat-label>Password</mat-label>
+                          <input [(ngModel)]="credentials.userPassword" required name = "password" type="password" matInput />
+                        </mat-form-field>
+                       
+                        <button type="submit" class="btn btn-primary">Login</button><br>
+                     
+                        <a style="color: white; margin-top: 10px;" routerLink="/signup">New User? Click here to sign up</a>
+                    </form>
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

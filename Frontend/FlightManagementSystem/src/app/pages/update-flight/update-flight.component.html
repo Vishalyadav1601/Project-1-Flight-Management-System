@@ -1,0 +1,30 @@
+
+<div class="z">
+    
+    <div class="update-flight">
+    
+    <h2>Update Flight Details</h2>
+    <ol>
+    <label for="flightId">Flight ID:</label>
+    <input class="exp" type="text" id="flightId" [(ngModel)]="flightId">
+    <br>
+    <br>
+    
+    <label for="flightModel">Flight Model:</label>
+    <input class="exp" type="text" id="flightModel" [(ngModel)]="flightModel">
+    <br>
+    <br>
+    
+    <label for="carrierName">Carrier Name:</label>
+    <input class="exp" type="text" id="carrierName" [(ngModel)]="carrierName">
+    <br>
+    <br>
+    
+    <label for="seatCapacity">Seat Capacity:</label>
+    <input class="exp" type="number" id="seatCapacity" [(ngModel)]="seatCapacity">
+    <br>
+</ol>
+    
+    <button class="hu" (click)="updateFlight()">Update</button>
+  </div>
+  

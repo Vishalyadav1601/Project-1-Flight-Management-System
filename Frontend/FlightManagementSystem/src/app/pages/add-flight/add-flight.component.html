@@ -1,0 +1,104 @@
+<div class="z">
+
+
+
+  <h1>Add Flight</h1>
+
+  <div>
+
+   <ol>
+
+   <form [formGroup]="flightForm" (ngSubmit)="onSubmit()">
+
+   
+
+    <br>
+
+    <div>
+
+     <label for="flightModel">Flight Model </label>
+
+     <input type="text" class="exp" id="flightModel" formControlName="flightModel">
+
+    </div>
+
+    <br>
+
+    <div>
+
+     <label for="carrierName">Carrier Name </label>
+
+     <input type="text" class="exp" id="carrierName" formControlName="carrierName">
+
+    </div>
+
+    <br>
+
+    <div>
+
+     <label for="seatCapacity">Seat Capacity</label>
+
+     <input type="number" class="exp" id="seatCapacity" formControlName="seatCapacity">
+
+    </div>
+
+    <br>
+
+    <button class="hu" type="submit" [disabled]="!flightForm.valid">Add Flight</button>
+
+   </form>
+
+   </ol>
+
+  </div>
+
+ </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+<div class="search-schedule-flight">
+    <h2>Search Schedule Flight </h2>
+    <label for="flightId">Flight ID:</label>
+    <input type="text" id="flightId" [(ngModel)]="flightId">
+    <br>
+    
+    <button class="hu" (click)="searchScheduleFlight()">Search</button>
+  
+    <div *ngIf="scheduleFlightDetails">
+      <h3>Schedule Flight Details</h3>
+      <p><strong>Flight ID:</strong> {{ scheduleFlightDetails.flightId }}</p>
+      <p><strong>Source Airport:</strong> {{ scheduleFlightDetails.source }}</p>
+      <p><strong>Destination Airport:</strong> {{ scheduleFlightDetails.destination }}</p>
+      <p><strong>Arrival Time:</strong> {{ scheduleFlightDetails.arrival }}</p>
+      <p><strong>Departure Time:</strong> {{ scheduleFlightDetails.departure }}</p>
+      <p><strong>Ticket Cost:</strong> {{ scheduleFlightDetails.cost }}</p>
+    </div>
+  </div>
+  

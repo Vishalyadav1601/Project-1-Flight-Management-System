@@ -1,0 +1,21 @@
+<div class="search-flight">
+    <div>
+    <h2>Search Flight</h2>
+    <label for="flightNumber">Enter Flight Number:</label>
+    <input type="text" id="flightNumber" [(ngModel)]="flightNumber">
+    <br>
+    <br>
+    
+    <button class="hu" (click)="searchFlight()">Search</button>
+</div>
+
+
+  
+    <div *ngIf="flightDetails">
+      <h3>Flight Details</h3>
+      <p><strong>Flight Number:</strong> {{ flightDetails.flightNumber }}</p>
+      <p><strong>Origin:</strong> {{ flightDetails.origin }}</p>
+      <p><strong>Destination:</strong> {{ flightDetails.destination }}</p>
+    </div>
+  </div>
+  

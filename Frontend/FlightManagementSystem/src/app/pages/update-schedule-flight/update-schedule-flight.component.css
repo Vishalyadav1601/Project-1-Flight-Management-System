@@ -1,0 +1,46 @@
+.update-schedule-flight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    
+  }
+  
+  .update-schedule-flight label {
+    margin-bottom: 5px;
+  }
+  
+  .update-schedule-flight input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .update-schedule-flight button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .flight-schedule button:hover {
+    background-color: #0056b3;
+  }
+  .z{
+    text-align: center;
+
+    margin-top: 50px;
+    margin-left: 200px;  
+    margin-right: 200px;  
+    background: hsla(205, 46%, 30%, 1);  
+    background: linear-gradient(90deg, hsla(205, 46%, 30%, 1), hsla(260, 29%, 36%, 1) 100%);  
+    color: aliceblue;  
+    width: 1000px;  
+    height: 550px;  
+    border-radius: 20px;  
+  } 
+  

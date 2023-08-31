@@ -1,0 +1,37 @@
+<div class="booking-form">
+    <h2>Flight Booking</h2>
+    <form>
+      <div *ngFor="let passenger of passengers; let i = index" class="passenger-section">
+        <h3>Passenger {{ i + 1 }}</h3>
+        <div class="form-group">
+          <label for="name{{ i }}">Name:</label>
+          <input type="text" id="name{{ i }}" class="form-control" [(ngModel)]="passenger.name" name="passengerName" required>
+        </div>
+        <div class="form-group">
+          <label for="flightId{{ i }}">Flight ID:</label>
+          <input type="text" id="flightId{{ i }}" class="form-control" [(ngModel)]="passenger.flightId" name="passengerFlightId" required>
+        </div>
+       
+        <div class="form-group">
+          <label for="age{{ i }}">Age:</label>
+          <input type="number" id="age{{ i }}" class="form-control" [(ngModel)]="passenger.age" name="passengerAge" required>
+        </div>
+        <div class="form-group">
+          <label for="gender{{ i }}">Gender:</label>
+          <select id="gender{{ i }}" class="form-control" [(ngModel)]="passenger.gender" name="passengerGender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mobile{{ i }}">Mobile Number:</label>
+          <input type="tel" id="mobile{{ i }}" class="form-control" [(ngModel)]="passenger.mobile" name="passengerMobile" required>
+        </div>
+        <button (click)="removePassenger(i)" class="btn btn-danger">Remove Passenger</button>
+      </div>
+      <button (click)="addPassenger()" class="btn btn-success">Add Passenger</button>
+      <button (click)="confirmBooking()" class="btn btn-primary">Confirm Booking</button>
+    </form>
+  </div>
+  
